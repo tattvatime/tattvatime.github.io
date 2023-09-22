@@ -1,0 +1,132 @@
+
+* {
+    box-sizing: content-box;
+    background-color: rgba(219, 219, 211, 1.0);
+    font-family: "Calibri", "Trebuchet MS", "Verdana", "Arial", "Helvetica", sans-serif;
+    font-size: 18px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+  display: block;
+  margin: 0 auto 0 auto;
+  border-radius: 4px 4px 4px 4px;
+  border: 0;
+  padding: 0;
+  /*-webkit-background-clip: content-box;
+  background-clip: content-box;*/
+  /* 1292 x 1273 */ /* ipad is 2048 x 1536 */
+}
+
+a {
+    color: black;
+}
+
+.clock1 {
+    /*height: auto;*/
+   width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.art {
+    /*height: auto;*/
+   width: 80%;
+    display: block;
+    margin: auto;
+  border-width: 0px;
+}
+
+.major {
+    width: 100%;
+    display: block;
+    margin: auto;
+    /*position: fixed;
+    z-index: -1;*/
+}
+
+.minor {
+    width: 100%;
+    display: block;
+    margin: auto;
+    -webkit-transition: opacity 5s;
+    transition: opacity 5s;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.ztop {
+    position: relative;
+    z-index: 199;
+    background-color: rgba(219, 219, 211, 0.0);
+    /*color: #ffff08;
+    text-shadow: -1px 1px rgb(0,0,0);*/
+}
+
+.clockText {
+    background: rgba(219, 219, 211, 0.0);
+    /*color: #ffff08;*/
+}
+
+p.p8 {margin: 0% 4% 0% 4%;}
+
+.clock-example {
+    display: -webkit-flex; /*safari*/
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.image-component {
+    position: relative;
+    /*width: 100%;
+    height: 100%;*/
+    margin: 0px;
+    transform: scale(1,1);
+}
+.clock-component {
+    position: relative;
+    /*width: 100%;
+    height: 100%;*/
+    margin: 0px;
+}
+.clock-component canvas {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.clock-component .digital {
+    position: relative;
+    /*bottom: -35px;*/
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+}
+.clock-component .sunrise {
+  /*position: absolute;
+  bottom: -65px;*/
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+}
+.clock-component .phase {
+  /*position: absolute;
+  bottom: -95px;*/
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+}
